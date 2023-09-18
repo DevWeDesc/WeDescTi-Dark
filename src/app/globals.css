@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.selected-slide {
+  transform: scale(1.1); /* Aumenta o slide quando selecionado */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  z-index: 2; /* Coloca o slide selecionado acima dos outros */
+}
