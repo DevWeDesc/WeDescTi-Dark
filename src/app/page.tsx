@@ -4,6 +4,7 @@ import { SubBanner } from "@/Components/SubBanner";
 import { SwipperService } from "@/Components/SwipperService";
 import Image from "next/image";
 import bgServices from "@/image/+.png";
+import { Footer } from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
             alt=""
           />
           <SwipperService />
+        </section>
+        <section>
+          <Footer />
         </section>
       </main>
     </>
