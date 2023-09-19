@@ -20,18 +20,15 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.selected-slide {
-  transform: scale(1.1); /* Aumenta o slide quando selecionado */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave */
-  z-index: 2; /* Coloca o slide selecionado acima dos outros */
+::-webkit-scrollbar-track {
+  background: #170c1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10%;
 }

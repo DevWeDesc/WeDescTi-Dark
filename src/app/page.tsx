@@ -6,13 +6,14 @@ import Image from "next/image";
 import bgServices from "@/image/+.png";
 import { Footer } from "@/Components/Footer";
 import { SocialMedia } from "@/Components/SocialMedia";
+import { OnBoardingSection } from "@/Components/Onboardings/OnBoardingSection";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main className="flex flex-col w-full">
-        <section className="pl-20 flex items-center justify-center">
+        <section className="pl-20 flex items-center h-full bg-[#170c1b] justify-center">
           <Banner />
         </section>
         <section>
@@ -28,6 +29,9 @@ export default function Home() {
         </section>
         <section id="sociais">
           <SocialMedia />
+        </section>
+        <section>
+          <OnBoardingSection />
         </section>
         <Footer />
       </main>

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export const Banner = () => {
   return (
-    <div className="min-h-[725px] h-full w-full flex items-center ">
-      <div className="flex flex-col justify-center bg-none max-w-[720px] space-y-2">
+    <div className="min-h-[725px] h-full w-full flex items-center">
+      <div className="flex flex-col justify-center z-[2] bg-none max-w-[720px] space-y-2">
         {" "}
         <h2 className="text-4xl font-mono">
           Mantenha o foco no seu negócio, enquanto a{" "}
@@ -22,7 +22,7 @@ export const Banner = () => {
       <Image
         alt=""
         src={BannerImage}
-        className="absolute right-0 z-[-1] w-full"
+        className="absolute right-0 z-[1] h-screen object-scale-down"
       ></Image>
     </div>
   );

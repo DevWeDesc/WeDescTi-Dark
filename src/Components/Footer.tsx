@@ -3,7 +3,7 @@ import Logo from "@/image/Desc-Logo-Branco 1.png";
 import Image from "next/image";
 import arrowTop from "@/image/CaretUp.png";
 import iconMap from "@/image/map-pin.png";
-import { FiLinkedin, FiFacebook, FiInstagram } from "react-icons/fi";
+import { FiInstagram } from "react-icons/fi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export const Footer = () => {

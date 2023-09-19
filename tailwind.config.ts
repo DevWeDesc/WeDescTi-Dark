@@ -17,6 +17,9 @@ const config: Config = {
         sans: ["var(--font-lato)"],
         mono: ["var(--font-roboto)"],
       },
+      colors: {
+        primary: "#100216",
+      },
     },
   },
   plugins: [],

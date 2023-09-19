@@ -13,3 +13,11 @@ export interface ISocialMedia {
   children: ReactNode;
   textButton: string;
 }
+
+export interface IWeOnboarding {
+  logo?: string | any;
+  title: string;
+  description: string;
+  colorButton: string;
+  imageRigth: string | StaticImageData;
+}
