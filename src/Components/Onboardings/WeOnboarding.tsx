@@ -14,13 +14,15 @@ export const WeOnboarding = ({
       <div className="w-full h-full flex items-center">
         <div className="space-y-4">
           {logo != "" && <Image alt="" src={logo} />}
-          <h2 className="font-mono text-4xl max-w-lg">{title}</h2>
+          <h2 className="font-mono text-4xl xxl:text-5xl xxl:max-w-2xl max-w-lg">
+            {title}
+          </h2>
           <p className="text-[20px] brightness-75 max-w-xl hover:brightness-100 transition-all">
             {description}
           </p>
           <button
             style={{ backgroundColor: colorButton }}
-            className={`py-2 px-6 rounded-md hover:brightness-90 transition-all hover:ml-2`}
+            className={`py-2 xxl:text-[20px] px-6 rounded-md hover:brightness-90 transition-all hover:ml-2`}
           >
             Ver Onboarding
           </button>

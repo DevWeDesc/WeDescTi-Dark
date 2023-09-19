@@ -11,11 +11,11 @@ export const Banner = () => {
           Mantenha o foco no seu negócio, enquanto a{" "}
           <strong>Wedesc cuida da sua T.I</strong>
         </h2>
-        <p className="brightness-75 hover:brightness-90 transition-all max-w-[600px]">
+        <p className="brightness-75 hover:brightness-90 transition-all xxl:text-[20px] xxl:max-w-2xl max-w-[600px]">
           Equipe especializada em TI pronta para atender às suas necessidades.
           Aumente a produtividade e reduza custos com nossos serviços de TI.
         </p>
-        <button className="max-w-[200px] rounded-md py-2 hover:brightness-110 hover:border-[2px] hover:ml-4 transition-all mt-4 border-[1px] border-[#DC2626]">
+        <button className="max-w-[200px] xxl:text-[20px] xxl:py-4 xxl:max-w-xs rounded-md py-2 hover:brightness-110 hover:border-[2px] hover:ml-4 transition-all mt-4 border-[1px] border-[#DC2626]">
           Nossos trabalhos!
         </button>
       </div>
