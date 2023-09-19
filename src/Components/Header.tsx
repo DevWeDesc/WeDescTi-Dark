@@ -9,7 +9,7 @@ import { INav } from "@/interfaces/interface";
 export const Header = () => {
   const [selected, setSelected] = useState("");
   return (
-    <header className="font-sans fixed w-full z-20 bg-[#170c1b] py-2 px-20 flex items-center justify-between">
+    <header className="font-sans fixed w-full z-20 bg-[#170f18] xxl:px-96 py-2 px-20 flex items-center justify-between">
       <div className="flex items-center">
         <Image alt="" src={Logo} />
         {PrimaryNav.map((data: INav, index) => (

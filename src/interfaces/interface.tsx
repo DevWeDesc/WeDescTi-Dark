@@ -21,3 +21,7 @@ export interface IWeOnboarding {
   colorButton: string;
   imageRigth: string | StaticImageData;
 }
+
+export interface ISwiperService {
+  centeredCarousel: boolean;
+}

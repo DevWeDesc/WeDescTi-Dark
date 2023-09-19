@@ -20,6 +20,9 @@ const config: Config = {
       colors: {
         primary: "#100216",
       },
+      screens: {
+        xxl: "1700px",
+      },
     },
   },
   plugins: [],

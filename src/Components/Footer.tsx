@@ -8,7 +8,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-between p-20">
+    <footer className="flex justify-between p-20 xxl:px-96">
       <div className="flex space-x-20">
         <div className="space-y-4">
           {" "}

@@ -1,5 +1,5 @@
 import React from "react";
-import BannerImage from "@/image/image (4).png";
+import BannerImage from "@/image/imgBanner.png";
 import Image from "next/image";
 
 export const Banner = () => {
@@ -7,7 +7,7 @@ export const Banner = () => {
     <div className="min-h-[725px] h-full w-full flex items-center">
       <div className="flex flex-col justify-center z-[2] bg-none max-w-[720px] space-y-2">
         {" "}
-        <h2 className="text-4xl font-mono">
+        <h2 className="text-4xl xxl:text-5xl font-mono">
           Mantenha o foco no seu negócio, enquanto a{" "}
           <strong>Wedesc cuida da sua T.I</strong>
         </h2>
@@ -22,7 +22,7 @@ export const Banner = () => {
       <Image
         alt=""
         src={BannerImage}
-        className="absolute right-0 z-[1] h-screen object-scale-down"
+        className="absolute right-0 top-3 xxl:top-0 xxl:bottom-0 xxl:h-screen h-screen"
       ></Image>
     </div>
   );

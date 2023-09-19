@@ -8,7 +8,9 @@ import { SlPeople } from "react-icons/sl";
 export const SocialMedia = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center bg bg-gradient-to-br from-[#100515] via-[#073421] to-[#100515] py-32 gap-8 text-center">
-      <h2 className="text-center text-4xl font-mono">Nossas Redes Sociais</h2>
+      <h2 className="text-center xxl:text-5xl text-4xl font-mono">
+        Nossas Redes Sociais
+      </h2>
       <p className="brightness-75 hover:brightness-100 transition-all max-w-[700px] text-center leading-relaxed">
         Conecte-se conosco nas redes sociais e faça parte de nossa comunidade de
         tecnologia, onde compartilhamos conhecimento, tendências e novidades do
