@@ -3,6 +3,8 @@ import Logo from "@/image/Desc-Logo-Branco 1.png";
 import Image from "next/image";
 import arrowTop from "@/image/CaretUp.png";
 import iconMap from "@/image/map-pin.png";
+import { FiLinkedin, FiFacebook, FiInstagram } from "react-icons/fi";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -10,7 +12,7 @@ export const Footer = () => {
       <div className="flex space-x-20">
         <div className="space-y-4">
           {" "}
-          <h3 className="text-lg font-bold">MAPA DO SITE</h3>
+          <h3 className="text-lg font-mono">MAPA DO SITE</h3>
           <p>
             {" "}
             <a href="">Sobre nós</a>
@@ -30,17 +32,27 @@ export const Footer = () => {
         </div>
         <div className="space-y-4">
           {" "}
-          <h3 className="text-lg font-bold">PRECISA DE SUPORTE</h3>
+          <h3 className="text-lg font-mono">PRECISA DE SUPORTE?</h3>
           <p>chat online</p>
           <p>e-mail</p>
           <p>fale conosco</p>
         </div>
         <div className="space-y-4">
           {" "}
-          <h3 className="text-lg font-bold">SIGA-NOS</h3>
-          <p>Instagram</p>
-          <p>Facebook</p>
-          <p>Instagram</p>
+          <h3 className="text-lg font-mono">SIGA-NOS</h3>
+          <div className="flex items-center gap-4">
+            <a href="">
+              <FaLinkedinIn className="text-4xl  hover:bg-blue-500 p-1 hover:p-2 rounded-md transition-all" />
+            </a>
+            <a href="">
+              {" "}
+              <FaFacebookF className="text-4xl hover:bg-blue-600 p-1 hover:p-2 rounded-md transition-all" />
+            </a>
+            <a href="">
+              {" "}
+              <FiInstagram className="text-4xl p-0 hover:p-1 rounded-md hover:bg-gradient-to-br from-purple-500 via-pink-500 to-rose-500 transition-all" />
+            </a>
+          </div>
           <Image src={Logo} alt="" />
           <p className="max-w-[217px]">
             Nós acreditamos no sucesso dos nossos clientes

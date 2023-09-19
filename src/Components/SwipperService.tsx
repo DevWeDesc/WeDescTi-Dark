@@ -33,7 +33,7 @@ export const SwipperService = () => {
         <SwiperSlide className="hover:scale-105 transition-all hover:scale-110 transition-all w-full bg-[#143654] rounded-3xl border-t-[26px] border-[#0088FF] my-10 ">
           <div className="py-6 px-10 space-y-2">
             <Image alt="" className=" object-scale-down" src={Logo} />
-            <h2 className="text-3xl font-bold">Titulo</h2>
+            <h2 className="text-3xl font-mono">Titulo</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
@@ -60,7 +60,7 @@ export const SwipperService = () => {
         <SwiperSlide className="hover:scale-105 transition-all w-full bg-[#761B1B] rounded-3xl border-t-[26px] border-[#DC2626] my-10 ">
           <div className="py-6 px-10 space-y-2">
             <Image alt="" className=" object-scale-down" src={Logo} />
-            <h2 className="text-3xl font-bold">Titulo</h2>
+            <h2 className="text-3xl font-mono">Titulo</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
@@ -87,7 +87,7 @@ export const SwipperService = () => {
         <SwiperSlide className="hover:scale-105 transition-all w-full bg-[#442054] rounded-3xl border-t-[26px] border-[#AB1BEE] my-10 ">
           <div className="py-6 px-10 space-y-2">
             <Image alt="" className=" object-scale-down" src={Logo} />
-            <h2 className="text-3xl font-bold">Titulo</h2>
+            <h2 className="text-3xl font-mono">Titulo</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
@@ -114,7 +114,7 @@ export const SwipperService = () => {
         <SwiperSlide className="hover:scale-105 transition-all w-full bg-[#143654] rounded-3xl border-t-[26px] border-[#0088FF] my-10 ">
           <div className="py-6 px-10 space-y-2">
             <Image alt="" className=" object-scale-down" src={Logo} />
-            <h2 className="text-3xl font-bold">Titulo</h2>
+            <h2 className="text-3xl font-mono">Titulo</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
@@ -141,7 +141,7 @@ export const SwipperService = () => {
         <SwiperSlide className="hover:scale-105 transition-all w-full bg-[#761B1B] rounded-3xl border-t-[26px] border-[#DC2626] my-10 ">
           <div className="py-6 px-10 space-y-2">
             <Image alt="" className=" object-scale-down" src={Logo} />
-            <h2 className="text-3xl font-bold">Titulo</h2>
+            <h2 className="text-3xl font-mono">Titulo</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text

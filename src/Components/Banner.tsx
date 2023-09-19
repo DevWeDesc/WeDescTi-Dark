@@ -7,7 +7,7 @@ export const Banner = () => {
     <div className="min-h-[725px] h-full w-full flex items-center ">
       <div className="flex flex-col justify-center bg-none max-w-[720px] space-y-2">
         {" "}
-        <h2 className="text-4xl">
+        <h2 className="text-4xl font-mono">
           Mantenha o foco no seu negócio, enquanto a{" "}
           <strong>Wedesc cuida da sua T.I</strong>
         </h2>
