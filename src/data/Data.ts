@@ -1,4 +1,4 @@
-import { INav } from "@/interfaces/interface";
+import { INav, ISocialMedia } from "@/interfaces/interface";
 
 export const PrimaryNav: INav[] = [
   { name: "SERVIÇOS", reflink: "#services" },
@@ -6,7 +6,7 @@ export const PrimaryNav: INav[] = [
   { name: "CONTATO", reflink: "#contact" },
 ];
 
-export const SecondNav:INav[] = [
+export const SecondNav: INav[] = [
   { name: "REDES SOCIAIS", reflink: "#sociais" },
   { name: "ONBOARDING", reflink: "#onboarding" },
-]
+];

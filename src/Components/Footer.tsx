@@ -11,11 +11,22 @@ export const Footer = () => {
         <div className="space-y-4">
           {" "}
           <h3 className="text-lg font-bold">MAPA DO SITE</h3>
-          <p>Sobre nós</p>
-          <p>historia</p>
-          <p>termos de uso</p>
-          <p>politica de privacidade</p>
-          <p>politica de cookies</p>
+          <p>
+            {" "}
+            <a href="">Sobre nós</a>
+          </p>
+          <p>
+            <a href=""> historia</a>
+          </p>
+          <p>
+            <a href=""> termos de uso</a>
+          </p>
+          <p>
+            <a href=""> politica de privacidade</a>
+          </p>
+          <p>
+            <a href=""> politica de cookies</a>
+          </p>
         </div>
         <div className="space-y-4">
           {" "}

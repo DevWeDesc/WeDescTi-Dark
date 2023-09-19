@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -26,6 +26,7 @@ export const SwipperService = () => {
         }}
         spaceBetween={100}
         pagination={true}
+        navigation={true}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
