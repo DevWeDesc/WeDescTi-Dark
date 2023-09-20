@@ -9,6 +9,8 @@ export interface INav {
 }
 
 export interface ISocialMedia {
+  socialMedia: string;
+  url: string;
   followers: string;
   children: ReactNode;
   textButton: string;
@@ -31,4 +33,8 @@ export interface ISwiperData {
   color: string;
   title: string;
   description: string;
+}
+export interface IFooterDataMap {
+  name: string;
+  url: string;
 }

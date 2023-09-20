@@ -1,11 +1,14 @@
 import React from "react";
 import { ISocialMedia } from "@/interfaces/interface";
 import { FiArrowUpRight } from "react-icons/fi";
+import Link from "next/link";
 
 export const CardSocialMedia = ({
   followers,
   children,
   textButton,
+  url,
+  socialMedia,
 }: ISocialMedia) => {
   return (
     <div
@@ -23,7 +26,10 @@ export const CardSocialMedia = ({
         <p className="text-[12px] brightness-90">seguidores</p>
       </div>
       <button className="mt-2 py-2 px-4 border-[2px] brightness-90 hover:brightness-100 transition-all  hover:shadow-lg hover:shadow-emerald-800 border-white rounded-lg flex items-center gap-2">
-        <p>{textButton}</p> <FiArrowUpRight />
+        <Link href={url} title={`Link para ${socialMedia}`} target="_blank">
+          {textButton}
+        </Link>{" "}
+        <FiArrowUpRight />
       </button>
     </div>
   );

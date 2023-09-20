@@ -17,16 +17,36 @@ export const SocialMedia = () => {
         mundo da TI.
       </p>
       <div className="flex items-center justify-center w-full gap-8">
-        <CardSocialMedia followers="642" textButton="Seguir">
+        <CardSocialMedia
+          socialMedia="Linkedin"
+          url="https://www.linkedin.com/company/wedesctecnologia/"
+          followers="642"
+          textButton="Seguir"
+        >
           <BsLinkedin className="text-[48px]" />
         </CardSocialMedia>
-        <CardSocialMedia followers="951" textButton="Seguir">
+        <CardSocialMedia
+          socialMedia="Instagram"
+          url="https://www.instagram.com/we.desc/"
+          followers="951"
+          textButton="Seguir"
+        >
           <FaInstagramSquare className="text-[48px]" />
         </CardSocialMedia>
-        <CardSocialMedia followers="+1k" textButton="Inscrever-se">
+        <CardSocialMedia
+          socialMedia="Youtube"
+          url="https://www.youtube.com/@WeDesc."
+          followers="+1k"
+          textButton="Inscrever-se"
+        >
           <AiFillYoutube className="text-[48px]" />
         </CardSocialMedia>
-        <CardSocialMedia followers="+100" textButton="Fazer orçamento">
+        <CardSocialMedia
+          socialMedia="WhatsApp"
+          url="https://api.whatsapp.com/send?phone=5511937302594&text=Olá%20desejo%20fazer%20um%20orçamento!!"
+          followers="+100"
+          textButton="Fazer orçamento"
+        >
           <SlPeople className="text-[48px] font-bold" />
         </CardSocialMedia>
       </div>
