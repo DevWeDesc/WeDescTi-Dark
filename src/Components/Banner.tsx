@@ -15,7 +15,7 @@ export const Banner = () => {
           Equipe especializada em TI pronta para atender às suas necessidades.
           Aumente a produtividade e reduza custos com nossos serviços de TI.
         </p>
-        <button className="max-w-[200px] xxl:text-[20px] xxl:py-4 xxl:max-w-xs rounded-md py-2 hover:brightness-110 hover:border-[2px] hover:ml-4 transition-all mt-4 border-[1px] border-[#DC2626]">
+        <button className="max-w-[200px] xxl:text-[20px] xxl:py-4 xxl:max-w-xs rounded-md py-2 brightness-90 hover:brightness-110 hover:border-[2px] hover:ml-4 transition-all mt-4 border-[1px] border-[#DC2626]">
           Nossos trabalhos!
         </button>
       </div>

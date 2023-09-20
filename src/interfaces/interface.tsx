@@ -23,5 +23,12 @@ export interface IWeOnboarding {
 }
 
 export interface ISwiperService {
-  centeredCarousel: boolean;
+  quantitySlides: number;
+}
+
+export interface ISwiperData {
+  borderColor: string;
+  color: string;
+  title: string;
+  description: string;
 }

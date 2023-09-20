@@ -8,10 +8,20 @@ import bgServices from "@/image/+.png";
 import { Footer } from "@/Components/Footer";
 import { SocialMedia } from "@/Components/SocialMedia";
 import { OnBoardingSection } from "@/Components/Onboardings/OnBoardingSection";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [centeredCarousel, setCenteredCarousel] = useState(false);
+  const [quantitySlides, setQuantitySlides] = useState(4);
+  useEffect(() => {
+    if (window.innerWidth >= 1600) {
+      setQuantitySlides(3);
+      setCenteredCarousel(true);
+    } else {
+      setQuantitySlides(3.5);
+      setCenteredCarousel(true);
+    }
+  }, []);
   return (
     <>
       <Header />
@@ -22,22 +32,21 @@ export default function Home() {
         <section>
           <SubBanner />
         </section>
-        <section
-          id="services"
-          className={`px-20 xxl:px-96 xxl:${() =>
-            setCenteredCarousel(true)} py-4 h-full`}
-        >
+        <section id="services" className={`px-20 xxl:px-96 py-4 h-full`}>
           <Image
             src={bgServices}
             className="absolute left-0 z-[-1] h-full w-full max-h-[720px]"
             alt=""
           />
-          <SwipperService centeredCarousel={centeredCarousel} />
+          <SwipperService
+            quantitySlides={quantitySlides}
+            centeredCarousel={centeredCarousel}
+          />
         </section>
         <section id="sociais">
           <SocialMedia />
         </section>
-        <section>
+        <section id="onboarding">
           <OnBoardingSection />
         </section>
         <Footer />

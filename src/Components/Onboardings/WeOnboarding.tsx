@@ -22,7 +22,7 @@ export const WeOnboarding = ({
           </p>
           <button
             style={{ backgroundColor: colorButton }}
-            className={`py-2 xxl:text-[20px] px-6 rounded-md hover:brightness-90 transition-all hover:ml-2`}
+            className={`py-2 xxl:text-[20px] px-6 rounded-md hover:brightness-90 brightness-110 transition-all hover:ml-2`}
           >
             Ver Onboarding
           </button>
