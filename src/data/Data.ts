@@ -4,6 +4,13 @@ import {
   ISocialMedia,
   ISwiperData,
 } from "@/interfaces/interface";
+import imghermoso from "@/image/Ermoso.png";
+import imgmia from "@/image/imgMia.png";
+import imghato from "@/image/imgHato.png";
+import imgwine from "@/image/imgWineFull.png";
+import imgcooper from "@/image/imgCoopertrans.png";
+import imgquality from "@/image/imgquality.png";
+import imgumicore from "@/image/imgumicore.png";
 
 export const PrimaryNav: INav[] = [
   { name: "SERVIÇOS", reflink: "#services" },
@@ -18,46 +25,55 @@ export const SecondNav: INav[] = [
 
 export const SwiperData: ISwiperData[] = [
   {
-    borderColor: "#0088FF",
-    color: "#143654",
+    title: "Projeto Ermoso Engenharia",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    title: "Titulo",
+      "Sistema inovador via API para recebimento de laudos, permitindo ao cliente enviar e obter resultados mais ágeis e personalizados.",
+    url: "https://ermoso-engenharia.vercel.app/",
+    image: imghermoso,
   },
   {
-    borderColor: "#DC2626",
-    color: "#761B1B",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    title: "Titulo",
+      "Os clientes podem explorar o cardápio e efetuar reservas. Uma solução personalizada para uma experiência gastronômica inesquecível!",
+    title: "Projeto Mia Cucina",
+    date: "28/06/2023",
+    url: "https://www.restaurantemiacucina.com.br/",
+    image: imgmia,
   },
   {
-    borderColor: "#AB1BEE",
-    color: "#442054",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    title: "Titulo",
+      "Consulte os resultados dos exames do seu pet de forma rápida e fácil com nossa página dedicada. Cuide do seu melhor amigo com praticidade!",
+    title: "Projeto DrHato",
+    date: "10/04/2023",
+    url: "https://drhatosbc.ddns.me/vet/scr/centraldeexames.asp",
+    image: imghato,
   },
   {
-    borderColor: "#0088FF",
-    color: "#143654",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    title: "Titulo",
+      "Consulte os resultados dos exames do seu pet de forma rápida e fácil com nossa página dedicada. Cuide do seu melhor amigo com praticidade!",
+    title: "Projeto WineFull",
+    url: "https://wine-full.vercel.app/",
+    image: imgwine,
   },
   {
-    borderColor: "#DC2626",
-    color: "#761B1B",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    title: "Titulo",
+      "Descubra a excelência em cotações com nosso Sistema avançado. Facilidade, agilidade e precisão reunidos para otimizar suas negociações.",
+    title: "Projeto Cooper Trans",
+    url: "https://coopertrans.vercel.app/",
+    image: imgcooper,
   },
   {
-    borderColor: "#AB1BEE",
-    color: "#442054",
     description:
-      " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    title: "Titulo",
+      "Intranet inteligente: conectando equipes, acelerando projetos e aprimorando a colaboração. Simples, ágil e produtivo.",
+    title: "Projeto Quality Fix",
+    url: "https://quality-fix-intra-gamma.vercel.app/",
+    image: imgquality,
+  },
+  {
+    description:
+      "Modernizamos nosso ambiente corporativo com um E-commerce interno, otimizando processos e impulsionando a eficiência.",
+    title: "Projeto Umicore",
+    url: "https://umicore.vercel.app/",
+    image: imgumicore,
   },
 ];
 

@@ -10,6 +10,8 @@ import Logo from "@/image/Desc-Logo-Branco 1.png";
 import Arrow from "@/image/Vector (13).png";
 import { ISwiperService } from "@/interfaces/interface";
 import { SwiperData } from "@/data/Data";
+import Link from "next/link";
+import image from "@/image/Ermoso.png";
 
 export const SwipperService = ({ quantitySlides }: ISwiperService) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,6 +35,7 @@ export const SwipperService = ({ quantitySlides }: ISwiperService) => {
           modifier: 1,
           slideShadows: true,
         }}
+        initialSlide={1}
         onSlideChange={handleSlideChange}
         spaceBetween={100}
         pagination={true}
@@ -42,38 +45,43 @@ export const SwipperService = ({ quantitySlides }: ISwiperService) => {
         {SwiperData.map((swiper, index) => (
           <SwiperSlide
             key={index}
-            style={{
-              backgroundColor: swiper.color,
-              borderColor: swiper.borderColor,
-            }}
-            className={` max-w-xs transition-all w-full ${
+            className={`shadow-2xl shadow-[#342b36] max-w-md xxl:max-w-lg transition-all w-full ${
               index === currentIndex ? "scale-110" : "scale-95"
-            } rounded-3xl border-t-[26px] my-10 `}
+            } rounded-3xl border-t-[26px] mt-10 mb-20`}
           >
-            <div className="py-6 px-10 space-y-2">
-              <Image alt="" className=" object-scale-down" src={Logo} />
-              <h2 className="text-3xl xxl:text-4xl font-mono">Titulo</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.{" "}
-              </p>
+            <div className="space-y-4">
+              <Image
+                alt=""
+                className="mt-6 mx-5 object-scale-down"
+                src={Logo}
+              />
+              <h2 className=" px-5 text-3xl xxl:text-4xl font-mono min-h-[68.4px] xxl:min-h-[136px]">
+                {swiper.title}
+              </h2>
+              <Image src={swiper.image} className="object-scale-down" alt="" />
+              <p className="px-5">{swiper.description}</p>
             </div>
-            <div className="py-2 mt-4 w-full border-t-2 border-white">
-              <a
-                href=""
-                className="min-w-full px-10 flex justify-between items-center hover:ml-2 transition-all brightness-150"
+
+            <div className="py-4 mt-4 w-full flex justify-between items-center border-t-2 border-white">
+              <div>
+                <strong className="min-w-full pl-10 brightness-150 text-[12px]">
+                  Data da Entrega
+                </strong>
+                <p className="pl-10 text-[13px]">
+                  {swiper.date ? swiper.date : "Em progresso..."}
+                </p>
+              </div>
+              <Link
+                target="_blank"
+                title={`Link para o site da empresa ${swiper.title.substring(
+                  8
+                )}`}
+                href={swiper.url}
               >
-                <strong>Mais sobre titulo</strong>
-                <Image
-                  alt=""
-                  className="h-4 w-3 object-contain"
-                  src={Arrow}
-                ></Image>
-              </a>
+                <button className="mr-10 border-[1px] text-[13px] py-2 px-6 rounded-2xl border-red-600 hover:border-[2px] transition-all">
+                  Veja Mais
+                </button>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

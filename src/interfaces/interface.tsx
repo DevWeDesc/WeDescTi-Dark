@@ -29,8 +29,9 @@ export interface ISwiperService {
 }
 
 export interface ISwiperData {
-  borderColor: string;
-  color: string;
+  image: string | StaticImageData;
+  url: string;
+  date?: string;
   title: string;
   description: string;
 }

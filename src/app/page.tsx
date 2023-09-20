@@ -4,21 +4,14 @@ import { Header } from "@/Components/Header";
 import { SubBanner } from "@/Components/SubBanner";
 import { SwipperService } from "@/Components/SwipperService";
 import Image from "next/image";
-import bgServices from "@/image/+.png";
+
 import { Footer } from "@/Components/Footer";
 import { SocialMedia } from "@/Components/SocialMedia";
 import { OnBoardingSection } from "@/Components/Onboardings/OnBoardingSection";
 import { useEffect, useState } from "react";
+import { Services } from "@/Components/Services";
 
 export default function Home() {
-  const [quantitySlides, setQuantitySlides] = useState(3.5);
-  useEffect(() => {
-    if (window.innerWidth >= 1600) {
-      setQuantitySlides(3);
-    } else {
-      setQuantitySlides(3.5);
-    }
-  }, []);
   return (
     <>
       <Header />
@@ -29,16 +22,11 @@ export default function Home() {
         >
           <Banner />
         </section>
-        <section>
+        <section id="+desc">
           <SubBanner />
         </section>
         <section id="services" className={`px-20 xxl:px-96 py-10 h-full`}>
-          <Image
-            src={bgServices}
-            className="absolute left-0 z-[-1] h-full w-full max-h-[720px]"
-            alt=""
-          />
-          <SwipperService quantitySlides={quantitySlides} />
+          <Services />
         </section>
         <section id="sociais">
           <SocialMedia />
