@@ -23,7 +23,7 @@ export const SocialMedia = () => {
           followers="642"
           textButton="Seguir"
         >
-          <BsLinkedin className="text-[48px]" />
+          <BsLinkedin className="text-[48px] xxl:text-[64px]" />
         </CardSocialMedia>
         <CardSocialMedia
           socialMedia="Instagram"
@@ -31,7 +31,7 @@ export const SocialMedia = () => {
           followers="951"
           textButton="Seguir"
         >
-          <FaInstagramSquare className="text-[48px]" />
+          <FaInstagramSquare className="text-[48px] xxl:text-[64px]" />
         </CardSocialMedia>
         <CardSocialMedia
           socialMedia="Youtube"
@@ -39,7 +39,7 @@ export const SocialMedia = () => {
           followers="+1k"
           textButton="Inscrever-se"
         >
-          <AiFillYoutube className="text-[48px]" />
+          <AiFillYoutube className="text-[48px] xxl:text-[64px]" />
         </CardSocialMedia>
         <CardSocialMedia
           socialMedia="WhatsApp"
@@ -47,7 +47,7 @@ export const SocialMedia = () => {
           followers="+100"
           textButton="Fazer orçamento"
         >
-          <SlPeople className="text-[48px] font-bold" />
+          <SlPeople className="text-[48px]  xxl:text-[64px]" />
         </CardSocialMedia>
       </div>
     </div>

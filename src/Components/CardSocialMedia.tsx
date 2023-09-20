@@ -14,16 +14,16 @@ export const CardSocialMedia = ({
     <div
       className={`flex items-center flex-col rounded-xl py-10 ${
         textButton === "Seguir"
-          ? "px-20"
+          ? "px-20 xxl:px-32"
           : textButton === "Inscrever-se"
-          ? "px-[3.3rem]"
-          : "px-9"
-      } max-w-[261px] max-h-[246px] bg-transparent shadow-md shadow-emerald-700 hover:shadow-xl hover:shadow-emerald-700`}
+          ? "px-[3.3rem] xxl:px-[67.24px]"
+          : "px-9 xxl:px-[51.15px]"
+      } max-w-[261px] max-h-[246px] xxl:max-w-[281px] xxl:max-h-[281px] bg-transparent shadow-md shadow-emerald-700 hover:shadow-xl hover:shadow-emerald-700`}
     >
       {children}
       <div className="pt-3">
-        <p className="text-4xl font-mono">{followers}</p>
-        <p className="text-[12px] brightness-90">seguidores</p>
+        <p className="text-4xl font-mono xxl:text-5xl">{followers}</p>
+        <p className="text-[12px] xxl:text-[14px] brightness-90">seguidores</p>
       </div>
       <button className="mt-2 py-2 px-4 border-[2px] brightness-90 hover:brightness-100 transition-all  hover:shadow-lg hover:shadow-emerald-800 border-white rounded-lg flex items-center gap-2">
         <Link href={url} title={`Link para ${socialMedia}`} target="_blank">
