@@ -1,16 +1,33 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import BannerImage from "@/image/imgBanner.png";
 import Image from "next/image";
 
 export const Banner = () => {
+  const text =
+    " Mantenha o foco no seu negócio, enquanto a Wedesc cuida da sua T.I";
+  const [displayText, setDisplayText] = useState("");
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= text.length) {
+        setDisplayText(text.substring(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 70);
+
+    return () => {
+      clearInterval(typingInterval);
+    };
+  }, []);
   return (
     <div className="min-h-[725px] h-full w-full flex items-center">
       <div className="flex flex-col justify-center z-[2] bg-none max-w-[720px] space-y-2">
         {" "}
-        <h2 className="text-4xl xxl:text-5xl font-mono">
-          Mantenha o foco no seu negócio, enquanto a{" "}
-          <strong>Wedesc cuida da sua T.I</strong>
-        </h2>
+        <h1 className="text-4xl xxl:text-5xl font-mono">{displayText}</h1>
         <p className="brightness-75 hover:brightness-90 transition-all xxl:text-[20px] xxl:max-w-2xl max-w-[600px]">
           Equipe especializada em TI pronta para atender às suas necessidades.
           Aumente a produtividade e reduza custos com nossos serviços de TI.
