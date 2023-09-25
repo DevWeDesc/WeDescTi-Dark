@@ -1,16 +1,16 @@
 import { AboutData, AboutDataCards } from "@/data/Data";
 import React from "react";
 import { MdVerified } from "react-icons/md";
+import about from "@/image/pngtree-people-working-at-home-office-picture-image_8715243.png";
+import Image from "next/image";
 
 export const About = () => {
-  const about =
-    "https://png.pngtree.com/png-clipart/20230825/original/pngtree-people-working-at-home-office-picture-image_8715243.png";
   return (
     <div className=" grid grid-rows-2 py-20">
       {" "}
       <div className="grid-cols-2 grid">
         <div className="h-full flex justify-center">
-          <img alt="" src={about} className="object-scale-down" />
+          <Image alt="" src={about} className="object-scale-down" />
         </div>
         <div className="px-12 py-6 space-y-3 xxl:pr-96">
           <h2 className="w-full flex text-3xl font-mono">Somos a WeDesc!</h2>
