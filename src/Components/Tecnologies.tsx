@@ -42,7 +42,7 @@ export const Tecnologies = () => {
           />
         </div>
       </div>
-      <div className="space-y-16 mt-10  pr-20 xxl:pr-96 gap-8">
+      <div className="mt-5 pr-20 xxl:pr-96 gap-8">
         <div>
           <h3 className="text-2xl font-mono">
             Linguagens de programação, Bibliotecas e Frameworks
