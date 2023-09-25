@@ -2,14 +2,11 @@
 import { Banner } from "@/Components/Banner";
 import { Header } from "@/Components/Header";
 import { SubBanner } from "@/Components/SubBanner";
-import { SwipperService } from "@/Components/SwipperService";
-import Image from "next/image";
-
 import { Footer } from "@/Components/Footer";
 import { SocialMedia } from "@/Components/SocialMedia";
 import { OnBoardingSection } from "@/Components/Onboardings/OnBoardingSection";
-import { useEffect, useState } from "react";
 import { Services } from "@/Components/Services";
+import { About } from "@/Components/About";
 
 export default function Home() {
   return (
@@ -21,6 +18,9 @@ export default function Home() {
           className="pl-20 xxl:pl-96 flex items-center h-screen w-full bg-[#170f18] justify-center"
         >
           <Banner />
+        </section>
+        <section id="about" className="pl-20 xxl:pl-96 h-full">
+          <About />
         </section>
         <section id="+desc">
           <SubBanner />

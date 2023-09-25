@@ -11,8 +11,10 @@ import imgwine from "@/image/imgWineFull.png";
 import imgcooper from "@/image/imgCoopertrans.png";
 import imgquality from "@/image/imgquality.png";
 import imgumicore from "@/image/imgumicore.png";
+import imgeleva from "@/image/imgEleva.png";
 
 export const PrimaryNav: INav[] = [
+  { name: "QUEM SOMOS", reflink: "#about" },
   { name: "SERVIÇOS", reflink: "#services" },
   { name: "+DESC", reflink: "#+desc" },
   { name: "CONTATO", reflink: "#contact" },
@@ -23,7 +25,44 @@ export const SecondNav: INav[] = [
   { name: "ONBOARDING", reflink: "#onboarding" },
 ];
 
+export const AboutData = [
+  { name: "Qualidade de entrega" },
+  { name: "Satisfação dos clientes" },
+  { name: "Experiência de mercado" },
+  { name: "Satisfação dos clientes" },
+];
+
+export const AboutDataCards = [
+  {
+    title: "Ótimo ROI:",
+    description:
+      "Um software customizado traz a melhor relaçãocusto-benefício no longo prazo por atender as necessidades específicas de determinado serviço. Por isso, pode resultar em maior investimento inicial, mas certamente o ROI vaicompensar esse custo.",
+  },
+  {
+    title: "Propriedade:",
+    description:
+      "O software sob medida pertence à empresa/usuário que opossui. Isso significa que você pode adicionar e remover funcionalidades quando precisar.",
+  },
+  {
+    title: "Manutenção:",
+    description:
+      "Os contratos de desenvolvimento de um softwarepersonalizado normalmente incluem manutenção e sustentação. Por isso, podem ser realizadas sem a necessidade de interromper as atividades do seu negócio.",
+  },
+  {
+    title: "Garantia de segurança:",
+    description:
+      "Quem necessita de maior segurança e sigilo dedadospode trabalhar com o conceito Security by Design. Ou seja, onde as estratégias de segurança são pensadas em todas as fases do projeto.",
+  },
+];
+
 export const SwiperData: ISwiperData[] = [
+  {
+    description:
+      "Seja recebido pelo luxo e elegância no nosso site de e-commerce de joias, o Brilho Eterno. Mergulhe em um mundo cintilante de joias finas e exclusivas!",
+    title: "Projeto Eleva",
+    url: "https://elevav1.vercel.app/",
+    image: imgeleva,
+  },
   {
     title: "Projeto Ermoso Engenharia",
     description:
