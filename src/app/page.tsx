@@ -7,6 +7,7 @@ import { SocialMedia } from "@/Components/SocialMedia";
 import { OnBoardingSection } from "@/Components/Onboardings/OnBoardingSection";
 import { Services } from "@/Components/Services";
 import { About } from "@/Components/About";
+import { Tecnologies } from "@/Components/Tecnologies";
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
         </section>
         <section id="services" className={`px-20 xxl:px-96 py-10 h-full`}>
           <Services />
+        </section>
+        <section id="about" className="pl-20 xxl:pl-96 h-full">
+          <Tecnologies />
         </section>
         <section id="sociais">
           <SocialMedia />

@@ -12,7 +12,7 @@ export const About = () => {
         <div className="h-full flex justify-center">
           <img alt="" src={about} className="object-scale-down" />
         </div>
-        <div className="px-12 py-6 space-y-3">
+        <div className="px-12 py-6 space-y-3 xxl:pr-96">
           <h2 className="w-full flex text-3xl font-mono">Somos a WeDesc!</h2>
           <p className="text-xl font-mono">
             Software personalizado para sua empresa!
@@ -30,10 +30,10 @@ export const About = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-2  pr-20 gap-8">
+      <div className="grid grid-cols-2 mt-10  pr-20  xxl:pr-96 gap-8">
         {AboutDataCards.map((data, index) => (
           <div
-            className="p-10 bg-gray-700 rounded-2xl brightness-90 transition-all hover:brightness-100 hover:shadow-2xl hover:shadow-gray-600"
+            className="p-10 bg-gray-700  rounded-2xl brightness-90 transition-all hover:brightness-100 hover:shadow-2xl hover:shadow-gray-600"
             key={index}
           >
             <p className="leading-relaxed">
