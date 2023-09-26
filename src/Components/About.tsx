@@ -13,7 +13,7 @@ export const About = () => {
           <Image alt="" src={about} className="object-scale-down" />
         </div>
         <div className="px-12 py-6 space-y-3 xxl:pr-96">
-          <h2 className="w-full flex text-3xl font-mono">Somos a WeDesc!</h2>
+          <h2 className="w-full flex text-4xl font-mono">Somos a WeDesc!</h2>
           <p className="text-xl font-mono">
             Software personalizado para sua empresa!
           </p>

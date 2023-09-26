@@ -39,3 +39,9 @@ export interface IFooterDataMap {
   name: string;
   url: string;
 }
+
+export interface IDivTecnologies {
+  children: ReactNode;
+  bg: string;
+  color: string;
+}
