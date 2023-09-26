@@ -16,6 +16,10 @@ import {
   SiBootstrap,
   SiMui,
   SiJavascript,
+  SiPrisma,
+  SiPostgresql,
+  SiMongodb,
+  SiMongoose,
 } from "react-icons/si";
 import { IDivTecnologies } from "@/interfaces/interface";
 
@@ -51,49 +55,49 @@ export const Tecnologies = () => {
           />
         </div>
       </div>
-      <div className="mt-0 pr-20 xxl:pr-96 gap-8">
+      <div className="mt-0  pr-20 xxl:pr-96 gap-8">
         <div className="grid grid-cols-6 grid-rows-2 gap-7 space-y-10">
-          <DivTecnologies color="white" bg="">
+          <DivTecnologies color="#000" bg="#FFF">
             <SiNextdotjs className={`${classTecnologi}`} />
             <p className="text-2xl font-mono">NextJs</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(14 165 233)">
+          <DivTecnologies color="#FFF" bg="rgb(14 165 233)">
             <SiReact className={classTecnologi} />
             <p className="text-2xl font-mono ">React</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(59 130 246)">
+          <DivTecnologies color="#FFF" bg="rgb(30 64 175)">
             <SiTypescript className={`${classTecnologi} `} />
             <p className="text-2xl font-mono">TypeScript</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(22 163 74)">
+          <DivTecnologies color="rgb(22 163 74)" bg="#FFF">
             <SiNodedotjs className={`${classTecnologi}  `} />
             <p className="text-2xl font-mono">NodeJs</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(147 51 234)">
+          <DivTecnologies color="rgb(147 51 234)" bg="#FFF">
             <SiCsharp className={`${classTecnologi}  `} />
             <p className="text-2xl font-mono">C Sharp</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="">
+          <DivTecnologies color="black" bg="#FFF">
             <SiFastify className={`${classTecnologi}  `} />
             <p className="text-2xl font-mono">Fastify</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(56 189 248)">
+          <DivTecnologies color="rgb(56 189 248)" bg="rgb(8 47 73)">
             <SiTailwindcss className={`${classTecnologi}   `} />
             <p className="text-2xl font-mono">TailwindCSS</p>
           </DivTecnologies>
-          <DivTecnologies color="black" bg="rgb(249 168 212)">
+          <DivTecnologies color="#000" bg="rgb(249 168 212)">
             <SiStyledcomponents className={`${classTecnologi} `} />
             <p className="text-2xl font-mono">Styled-Components</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(45 212 191)">
+          <DivTecnologies color="#FFF" bg="rgb(45 212 191)">
             <SiChakraui className={`${classTecnologi} `} />
             <p className="text-2xl font-mono">Chakra-UI</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(168 85 247)">
+          <DivTecnologies color="rgb(107 33 168)" bg="#FFF">
             <SiBootstrap className={`${classTecnologi}  `} />
             <p className="text-2xl font-mono">BOOTSTRAP</p>
           </DivTecnologies>
-          <DivTecnologies color="white" bg="rgb(29 78 216)">
+          <DivTecnologies color="rgb(29 78 216)" bg="#FFF">
             <SiMui className={`${classTecnologi}  `} />
             <p className="text-2xl font-mono"> MUI</p>
           </DivTecnologies>
@@ -101,15 +105,27 @@ export const Tecnologies = () => {
             <SiJavascript className={`${classTecnologi}  `} />
             <p className="text-2xl font-mono"> JavaScript</p>
           </DivTecnologies>
-          <div>
-            {" "}
-            <p>Bancos de Dados e ORMs</p>
-          </div>
+          <p className="pt-16 text-3xl col-span-6 font-mono">
+            Bancos de Dados e ORMs
+          </p>
+          <DivTecnologies color="#FFF" bg="rgb(8 47 73)">
+            <SiPrisma className={`${classTecnologi}  `} />
+            <p className="text-2xl font-mono"> Prisma</p>
+          </DivTecnologies>
+          <DivTecnologies color="rgb(30 64 175)" bg="#FFF">
+            <SiPostgresql className={`${classTecnologi}  `} />
+            <p className="text-2xl font-mono"> PostgreSQL</p>
+          </DivTecnologies>
+          <DivTecnologies color="rgb(34 197 94)" bg="rgb(8 47 73)">
+            <SiMongodb className={`${classTecnologi}  `} />
+            <p className="text-2xl font-mono"> MongoDB</p>
+          </DivTecnologies>
+          <DivTecnologies color="rgb(136 19 55)" bg="#FFF">
+            <SiMongoose className={`${classTecnologi}  `} />
+            <p className="text-2xl font-mono"> Mongoose</p>
+          </DivTecnologies>
         </div>
       </div>
-      {/* <div>
-        <p>Bancos de Dados e ORMs</p>
-      </div> */}
     </div>
   );
 };
