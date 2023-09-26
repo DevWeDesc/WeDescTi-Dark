@@ -25,12 +25,11 @@ import { IDivTecnologies } from "@/interfaces/interface";
 
 export const Tecnologies = () => {
   return (
-    <div className="grid grid-rows-2 pb-20">
+    <div className="grid grid-rows-1  pb-20">
       {" "}
-      <div className="xxl:grid-cols-3 grid-cols-2 grid">
-        <div className="flex flex-col justify-between py-3 space-y-3 ">
-          <div></div>
-          <div className="space-y-4">
+      <div className="xxl:grid-cols-3  grid-cols-2 grid">
+        <div className="flex flex-col h-full justify-between  py-3 space-y-3 ">
+          <div className="space-y-4 pt-16 xxl:pt-32">
             <h2 className="w-full flex text-4xl xxl:text-5xl font-mono">
               Nossas Tecnologias!
             </h2>
@@ -43,11 +42,11 @@ export const Tecnologies = () => {
               conectar pessoas e revolucionar setores.
             </p>
           </div>
-          <h3 className="text-3xl xxl:text-4xl font-mono pt-10">
+          <h3 className="text-3xl xxl:text-4xl font-mono pt-5">
             Linguagens de programação, Bibliotecas e Frameworks!
           </h3>
         </div>
-        <div className="h-full flex w-full justify-center xxl:col-span-2">
+        <div className="h-full flex w-full justify-center  xxl:col-span-2">
           <Image
             alt=""
             src={about}
@@ -105,8 +104,8 @@ export const Tecnologies = () => {
             <SiJavascript className={`${classTecnologi}  `} />
             <p className="text-2xl font-mono"> JavaScript</p>
           </DivTecnologies>
-          <p className="pt-16 text-3xl col-span-6 font-mono">
-            Bancos de Dados e ORMs
+          <p className="pt-16 text-3xl xxl:text-4xl col-span-6 font-mono">
+            Bancos de Dados e ORMs!
           </p>
           <DivTecnologies color="#FFF" bg="rgb(8 47 73)">
             <SiPrisma className={`${classTecnologi}  `} />

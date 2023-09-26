@@ -29,7 +29,7 @@ export default function Home() {
         <section id="services" className={`px-20 xxl:px-96 py-10 h-full`}>
           <Services />
         </section>
-        <section id="about" className="pl-20 xxl:pl-96 h-full">
+        <section id="tecnologies" className="pl-20 xxl:pl-96 h-full">
           <Tecnologies />
         </section>
         <section id="sociais">

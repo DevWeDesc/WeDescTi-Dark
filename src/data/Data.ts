@@ -16,6 +16,7 @@ import imgeleva from "@/image/imgEleva.png";
 export const PrimaryNav: INav[] = [
   { name: "QUEM SOMOS", reflink: "#about" },
   { name: "SERVIÇOS", reflink: "#services" },
+  { name: "TECNOLOGIAS", reflink: "#tecnologies" },
   { name: "+DESC", reflink: "#+desc" },
   { name: "CONTATO", reflink: "#contact" },
 ];
