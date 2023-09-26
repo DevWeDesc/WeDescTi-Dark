@@ -24,22 +24,24 @@ export const Banner = () => {
     };
   }, []);
   return (
-    <div className="min-h-[725px] h-full w-full flex items-center">
-      <div className="flex flex-col justify-center z-[2] bg-none max-w-[720px] space-y-2">
+    <div className="lg:min-h-[725px] text-center lg:text-left h-full w-full flex items-center">
+      <div className="flex flex-col items-center lg:items-start lg:justify-center z-[2] bg-none lg:max-w-[720px] space-y-2">
         {" "}
-        <h1 className="text-4xl xxl:text-5xl font-mono">{displayText}</h1>
-        <p className="brightness-75 hover:brightness-90 transition-all xxl:text-[20px] xxl:max-w-2xl max-w-[600px]">
+        <h1 className="text-3xl lg:text-4xl xxl:text-5xl font-mono">
+          {displayText}
+        </h1>
+        <p className="brightness-75 hover:brightness-90 transition-all xxl:text-[20px] xxl:max-w-2xl lg:max-w-[600px]">
           Equipe especializada em TI pronta para atender às suas necessidades.
           Aumente a produtividade e reduza custos com nossos serviços de TI.
         </p>
-        <button className="max-w-[200px] xxl:text-[20px] xxl:py-4 xxl:max-w-xs rounded-md py-2 brightness-90 hover:brightness-110 hover:border-[2px] hover:ml-4 transition-all mt-4 border-[1px] border-[#DC2626]">
+        <button className="w-full lg:max-w-[200px] xxl:text-[20px] xxl:py-4 xxl:max-w-xs rounded-md py-2 brightness-90 hover:brightness-110 hover:border-[2px] hover:ml-4 transition-all mt-4 border-[1px] border-[#DC2626]">
           Nossos trabalhos!
         </button>
       </div>
       <Image
         alt=""
         src={BannerImage}
-        className="absolute right-0 top-3 xxl:top-0 xxl:bottom-0 xxl:h-screen h-screen"
+        className="absolute hidden lg:block right-0 top-3 xxl:top-0 xxl:bottom-0 xxl:h-screen h-screen"
       ></Image>
     </div>
   );

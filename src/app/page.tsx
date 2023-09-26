@@ -16,20 +16,23 @@ export default function Home() {
       <main className="flex flex-col w-full">
         <section
           id="init"
-          className="pl-20 xxl:pl-96 flex items-center h-screen w-full bg-[#170f18] justify-center"
+          className="px-10 lg:px-0 lg:pl-20 xxl:pl-96 flex items-center h-screen w-full bg-[#170f18] justify-center"
         >
           <Banner />
         </section>
-        <section id="about" className="pl-20 xxl:pl-96 h-full">
+        <section id="about" className="px-10 lg:px-0 lg:pl-20 xxl:pl-96 h-full">
           <About />
         </section>
         <section id="+desc">
           <SubBanner />
         </section>
-        <section id="services" className={`px-20 xxl:px-96 py-10 h-full`}>
+        <section
+          id="services"
+          className="px-20 hidden lg:block xxl:px-96 py-10 h-full"
+        >
           <Services />
         </section>
-        <section id="tecnologies" className="pl-20 xxl:pl-96 h-full">
+        <section id="tecnologies" className="lg:pl-20 xxl:pl-96 h-full">
           <Tecnologies />
         </section>
         <section id="sociais">

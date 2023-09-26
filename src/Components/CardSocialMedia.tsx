@@ -12,13 +12,7 @@ export const CardSocialMedia = ({
 }: ISocialMedia) => {
   return (
     <div
-      className={`flex items-center flex-col rounded-xl py-10 ${
-        textButton === "Seguir"
-          ? "px-20 xxl:px-32"
-          : textButton === "Inscrever-se"
-          ? "px-[3.3rem] xxl:px-[67.24px]"
-          : "px-9 xxl:px-[51.15px]"
-      } max-w-[261px] max-h-[246px] xxl:max-w-[281px] xxl:max-h-[281px] bg-transparent shadow-md shadow-emerald-700 hover:shadow-xl hover:shadow-emerald-700`}
+      className={`flex items-center flex-col rounded-xl py-10 bg-transparent shadow-md shadow-emerald-700 hover:shadow-xl hover:shadow-emerald-700`}
     >
       {children}
       <div className="pt-3">
