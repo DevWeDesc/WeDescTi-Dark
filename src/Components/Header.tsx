@@ -8,13 +8,57 @@ import { INav } from "@/interfaces/interface";
 
 export const Header = () => {
   const [selected, setSelected] = useState("");
+  const [openHamburguer, setOpenHamburguer] = useState(false);
   return (
-    <header className="font-sans fixed w-full z-20 bg-[#170f18]  py-2 px-10 lg:px-20 flex items-center justify-between">
-      <div className="flex items-center">
-        <Image alt="" src={Logo} />
+    <header
+      className={`${
+        openHamburguer ? "opacity-100" : "opacity-100 h-full"
+      } font-sans fixed xl:relative xl:h-full xl:w-full z-20 xl:bg-[#170f18] bg-[#170f18] text-white h-screen ${
+        openHamburguer ? " w-[50%]" : "w-0 px-[0px]"
+      }  transition-all py-2 px-10 min-h-32 xl:px-20 flex flex-col xl:flex-row items-center justify-center xl:justify-between`}
+    >
+      <div
+        className={`transition-all bg-[#170f18] flex items-center justify-center h-12 gap-2 absolute w-screen top-0  left-0 px-10 xl:hidden`}
+      >
+        <div
+          onClick={() =>
+            openHamburguer ? setOpenHamburguer(false) : setOpenHamburguer(true)
+          }
+          className={`max-w-[50px] h-12 flex flex-col gap-8 absolute top-0 pt-4 left-0 z-10 px-10 xl:hidden`}
+        >
+          <div
+            className={`${
+              openHamburguer ? "absolute rotate-45 mt-2" : "absolute  mt-2"
+            } h-[2px] transition-all brightness-75 w-8 bg-white`}
+          ></div>
+          <div
+            className={`h-[1px] w-8 ${
+              openHamburguer ? "hidden" : "block"
+            } bg-white h-[2px] brightness-75`}
+          ></div>
+          <div
+            className={` ${
+              openHamburguer
+                ? "absolute rotate-[130deg] mt-2"
+                : " absolute  mt-4"
+            } h-[2px] brightness-75 w-8 bg-white transition-all`}
+          ></div>
+        </div>
+        <Image alt="" className=" xl:block" src={Logo} />
+      </div>
+
+      <div
+        className={`flex flex-col justify-center ${
+          openHamburguer ? "flex" : "hidden xl:flex"
+        } xl:flex-row items-center`}
+      >
+        <Image alt="" className="hidden xl:flex" src={Logo} />
         {PrimaryNav.map((data: INav, index) => (
           <Nav
-            onclick={() => setSelected(data.name)}
+            onclick={() => {
+              setSelected(data.name);
+              setOpenHamburguer(false);
+            }}
             selected={selected}
             name={data.name}
             reflink={data.reflink}
@@ -22,10 +66,17 @@ export const Header = () => {
           />
         ))}
       </div>
-      <div className="flex items-center">
+      <div
+        className={`flex flex-col ${
+          openHamburguer ? "flex" : "hidden xl:flex"
+        } xl:flex-row items-center`}
+      >
         {SecondNav.map((data: INav, index) => (
           <Nav
-            onclick={() => setSelected(data.name)}
+            onclick={() => {
+              setSelected(data.name);
+              setOpenHamburguer(false);
+            }}
             selected={selected}
             name={data.name}
             reflink={data.reflink}
