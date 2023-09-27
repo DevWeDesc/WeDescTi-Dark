@@ -32,7 +32,7 @@ export default function Home() {
         >
           <Services />
         </section>
-        <section id="tecnologies" className="lg:pl-20 xxl:pl-96 h-full">
+        <section id="tecnologies" className="lg:pl-20 xxl:px-96 h-full">
           <Tecnologies />
         </section>
         <section id="sociais">

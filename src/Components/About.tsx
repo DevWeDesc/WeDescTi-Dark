@@ -6,13 +6,13 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <div className="grid lg:grid-rows-2 lg:py-20">
+    <div className="grid lg:py-20">
       {" "}
-      <div className="lg:grid-cols-2 grid">
-        <div className="h-full hidden lg:flex justify-center">
+      <div className="lg:grid-cols-2 grid xxl:grid-cols-3">
+        <div className="h-full hidden lg:flex lg:justify-center lg:items-center">
           <Image alt="" src={about} className="object-scale-down" />
         </div>
-        <div className="lg:px-12 py-6 space-y-3 xxl:pr-96">
+        <div className="lg:px-12 py-6 xxl:py-0 space-y-3 xxl:col-span-2 xxl:pr-96">
           <h2 className="w-full flex text-3xl lg:text-4xl font-mono">
             Somos a WeDesc!
           </h2>

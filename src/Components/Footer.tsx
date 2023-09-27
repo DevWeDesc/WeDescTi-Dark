@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="hidden lg:flex justify-between p-20 xxl:px-96">
+    <footer className="hidden lg:flex justify-between p-20 ">
       <div className="flex space-x-20">
         <div className="space-y-4">
           {" "}

@@ -28,7 +28,7 @@ export const Tecnologies = () => {
     <div className="grid grid-rows-1 px-10 lg:px-0 w-full pb-20">
       {" "}
       <div className="xxl:grid-cols-3  lg:grid-cols-2 grid">
-        <div className="flex flex-col h-full justify-between  py-3 space-y-3 ">
+        <div className="flex flex-col xxl:col-span-2 h-full justify-between  py-3 space-y-3 ">
           <div className="space-y-4 pt-16 xxl:pt-32">
             <h2 className="w-full flex text-3xl lg:text-4xl xxl:text-5xl font-mono">
               Nossas Tecnologias!
@@ -46,16 +46,16 @@ export const Tecnologies = () => {
             Linguagens de programação, Bibliotecas e Frameworks!
           </h3>
         </div>
-        <div className="h-full hidden lg:flex w-full justify-center  xxl:col-span-2">
+        <div className="h-full hidden lg:flex w-full justify-center xxl:justify-end  xxl:col-span-1">
           <Image
             alt=""
             src={about}
-            className="xxl:pr-96 pr-20 w-[350px] xxl:w-auto object-scale-down"
+            className=" w-[350px] xxl:w-auto object-scale-down"
           />
         </div>
       </div>
-      <div className="mt-0  lg:pr-20 xxl:pr-96 gap-8">
-        <div className="grid lg:grid-cols-6 lg:grid-rows-2 grid-cols-2 gap-10 lg:gap-7 space-y-10">
+      <div className="mt-0 gap-8">
+        <div className="grid lg:pr-20 xxl:pr-0 lg:grid-cols-6 xxl:grid-cols-5 lg:grid-rows-2 grid-cols-2 gap-10 lg:gap-7 space-y-10">
           <DivTecnologies color="#000" bg="#FFF">
             <SiNextdotjs className={`${classTecnologi}`} />
             <p className="lg:text-2xl font-mono">NextJs</p>
@@ -104,7 +104,7 @@ export const Tecnologies = () => {
             <SiJavascript className={`${classTecnologi}  `} />
             <p className="lg:text-2xl font-mono"> JavaScript</p>
           </DivTecnologies>
-          <p className="pt-16 text-2xl lg:text-3xl xxl:text-4xl col-span-2 lg:col-span-6 font-mono">
+          <p className="pt-16 text-2xl lg:text-3xl xxl:text-4xl col-span-2 lg:col-span-6 xxl:col-span-5 font-mono">
             Bancos de Dados e ORMs!
           </p>
           <DivTecnologies color="#FFF" bg="rgb(8 47 73)">
@@ -137,23 +137,51 @@ const DivTecnologies = ({ children, bg, color }: IDivTecnologies) => {
     filter: "",
     color: "",
   });
+  const [continueStyle, setContinueStyle] = useState(false);
 
   const handleStyle = () => {
-    bg != ""
-      ? setStyleDiv({ backgroundColor: bg, color: color, filter: "" })
-      : setStyleDiv({
-          filter: "brightness(1.5)",
-          backgroundColor: "",
-          color: "",
-        });
+    if (bg != "" || continueStyle) {
+      setStyleDiv({ backgroundColor: bg, color: color, filter: "" });
+      // setContinueStyle(true);
+      //continueStyle ? setContinueStyle(false) : null;
+    } else {
+      setStyleDiv({
+        filter: "brightness(1.5)",
+        backgroundColor: "",
+        color: "",
+      });
+      //setContinueStyle(false);
+    }
   };
   const handleStyleDisable = () => {
-    setStyleDiv({ backgroundColor: "", filter: "", color: "" });
+    if (continueStyle) {
+      null;
+    } else {
+      setStyleDiv({ backgroundColor: "", filter: "", color: "" });
+      //setContinueStyle(false);
+    }
+  };
+
+  const handleStyleClick = () => {
+    if (continueStyle) {
+      setStyleDiv({ backgroundColor: bg, color: color, filter: "" });
+    } else {
+      setStyleDiv({ backgroundColor: "", filter: "", color: "" });
+    }
   };
   return (
     <div
       onMouseOver={handleStyle}
       onMouseOut={handleStyleDisable}
+      onClick={() => {
+        if (continueStyle) {
+          setContinueStyle(false);
+          handleStyleClick();
+        } else {
+          setContinueStyle(true);
+          handleStyleClick();
+        }
+      }}
       style={styleDiv}
       className="text-center rounded-md w-full gap-4 flex-col h-full shadow-lg brightness-90 hover:brightness-110 hover:scale-105 transition-all hover:shadow-xl hover:shadow-gray-700 shadow-gray-700 mt-10 flex justify-center items-center"
     >

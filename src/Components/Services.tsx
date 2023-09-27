@@ -8,7 +8,7 @@ export const Services = () => {
   const [quantitySlides, setQuantitySlides] = useState(3.5);
   useEffect(() => {
     if (window.innerWidth >= 1600) {
-      setQuantitySlides(3);
+      setQuantitySlides(2.5);
     } else {
       setQuantitySlides(3.5);
     }
