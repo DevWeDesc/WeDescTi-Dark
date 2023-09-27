@@ -9,8 +9,14 @@ export const Services = () => {
   useEffect(() => {
     if (window.innerWidth >= 1600) {
       setQuantitySlides(2.5);
-    } else {
+    } else if (window.innerWidth >= 1050) {
       setQuantitySlides(3.5);
+    } else if (window.innerWidth >= 658) {
+      setQuantitySlides(2);
+    } else if (window.innerWidth >= 558) {
+      setQuantitySlides(1.2);
+    } else {
+      setQuantitySlides(1);
     }
   }, []);
   return (

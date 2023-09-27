@@ -46,8 +46,8 @@ export const SwipperService = ({ quantitySlides }: ISwiperService) => {
           <SwiperSlide
             key={index}
             className={`shadow-2xl shadow-[#342b36] max-w-md xxl:max-w-lg transition-all w-full ${
-              index === currentIndex ? "scale-110" : "scale-95"
-            } rounded-3xl border-t-[26px] mt-10 mb-20`}
+              index === currentIndex ? "sm:scale-110" : "scale-95"
+            } rounded-3xl border-t-[26px] mt-10 mb-10 sm:mb-20`}
           >
             <div className="space-y-4">
               <Image
