@@ -6,14 +6,14 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <div className="grid lg:py-20">
+    <div className="grid py-10 lg:py-20">
       {" "}
       <div className="lg:grid-cols-2 grid xxl:grid-cols-3">
         <div className="h-full hidden lg:flex lg:justify-center lg:items-center">
           <Image alt="" src={about} className="object-scale-down" />
         </div>
         <div className="lg:px-12 py-6 xxl:py-0 space-y-3 xxl:col-span-2 xxl:pr-96">
-          <h2 className="w-full flex text-3xl lg:text-4xl font-mono">
+          <h2 className="w-full flex text-3xl md:text-4xl font-mono">
             Somos a WeDesc!
           </h2>
           <p className="text-xl font-mono">
@@ -32,7 +32,7 @@ export const About = () => {
           ))}
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 mt-10 pb-20 lg:pb-0  lg:pr-20  xxl:pr-96 gap-8">
+      <div className="grid md:grid-cols-2 mt-10  lg:pb-0  lg:pr-20 xxl:grid-cols-4  xxl:pr-96 gap-8">
         {AboutDataCards.map((data, index) => (
           <div
             className="p-10 bg-gray-700  rounded-2xl brightness-90 transition-all hover:brightness-100 hover:shadow-2xl hover:shadow-gray-600"

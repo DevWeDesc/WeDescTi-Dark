@@ -16,7 +16,7 @@ export const SocialMedia = () => {
         tecnologia, onde compartilhamos conhecimento, tendências e novidades do
         mundo da TI.
       </p>
-      <div className="grid lg:grid-cols-4 lg:gap-5 w-full gap-8 lg:px-20 xxl:px-96">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-5 w-full gap-8 lg:px-20 xxl:px-96">
         <CardSocialMedia
           socialMedia="Linkedin"
           url="https://www.linkedin.com/company/wedesctecnologia/"

@@ -7,11 +7,9 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import Image from "next/image";
 import Logo from "@/image/Desc-Logo-Branco 1.png";
-import Arrow from "@/image/Vector (13).png";
 import { ISwiperService } from "@/interfaces/interface";
 import { SwiperData } from "@/data/Data";
 import Link from "next/link";
-import image from "@/image/Ermoso.png";
 
 export const SwipperService = ({ quantitySlides }: ISwiperService) => {
   const [currentIndex, setCurrentIndex] = useState(0);

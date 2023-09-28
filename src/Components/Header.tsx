@@ -14,8 +14,10 @@ export const Header = () => {
       className={`${
         openHamburguer ? "opacity-100" : "opacity-100 h-full"
       } font-sans fixed xl:relative xl:h-full xl:w-full z-20 xl:bg-[#170f18] bg-[#170f18] text-white h-screen ${
-        openHamburguer ? " w-[50%]" : "w-0 px-[0px]"
-      }  transition-all py-2 px-10 min-h-32 xl:px-20 flex flex-col xl:flex-row items-center justify-center xl:justify-between`}
+        openHamburguer
+          ? " w-[50%] md:w-[35%] sm:w-[35%] h-full"
+          : "w-0 px-[0px]"
+      }  transition-all py-2 px-10 min-h-32 xl:px-20 flex flex-col justify-start xl:flex-row items-center xl:justify-between `}
     >
       <div
         className={`transition-all bg-[#170f18] flex items-center justify-center h-12 gap-2 absolute w-screen top-0  left-0 px-10 xl:hidden`}
@@ -50,9 +52,13 @@ export const Header = () => {
       <div
         className={`flex flex-col justify-center ${
           openHamburguer ? "flex" : "hidden xl:flex"
-        } xl:flex-row items-center`}
+        } xl:flex-row items-center md:items-end mt-10 xl:items-center xl:mt-0 `}
       >
-        <Image alt="" className="hidden xl:flex" src={Logo} />
+        <Image
+          alt=""
+          className="hidden xl:flex xl:h-12 xl:object-scale-down"
+          src={Logo}
+        />
         {PrimaryNav.map((data: INav, index) => (
           <Nav
             onclick={() => {
@@ -69,7 +75,7 @@ export const Header = () => {
       <div
         className={`flex flex-col ${
           openHamburguer ? "flex" : "hidden xl:flex"
-        } xl:flex-row items-center`}
+        } xl:flex-row items-center md:items-end xl:items-center`}
       >
         {SecondNav.map((data: INav, index) => (
           <Nav

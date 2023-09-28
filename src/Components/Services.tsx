@@ -2,15 +2,19 @@
 import React, { useEffect, useState } from "react";
 import { SwipperService } from "./SwipperService";
 import Image from "next/image";
-import bgServices from "@/image/+.png";
+import Logo from "@/image/Desc-Logo-Branco 1.png";
+import { SkeletonSwiper } from "./SkeletonSwiper";
 
 export const Services = () => {
   const [quantitySlides, setQuantitySlides] = useState(3.5);
+  const [loadingSwiper, setLoadingSwiper] = useState(false);
   useEffect(() => {
     if (window.innerWidth >= 1600) {
       setQuantitySlides(2.5);
-    } else if (window.innerWidth >= 1050) {
-      setQuantitySlides(3.5);
+    } else if (window.innerWidth >= 1280) {
+      setQuantitySlides(3);
+    } else if (window.innerWidth > 1024) {
+      setQuantitySlides(2.5);
     } else if (window.innerWidth >= 658) {
       setQuantitySlides(2);
     } else if (window.innerWidth >= 558) {
@@ -18,7 +22,9 @@ export const Services = () => {
     } else {
       setQuantitySlides(1);
     }
+    setLoadingSwiper(true);
   }, []);
+
   return (
     <div>
       <div className="w-full pb-6 flex flex-col items-center">
@@ -33,12 +39,14 @@ export const Services = () => {
           alavancar sua vantagem competitiva.
         </p>
       </div>
-      {/* <Image
-        src={bgServices}
-        className="absolute left-0 z-[-1] h-full w-full max-h-[720px]"
-        alt=""
-      /> */}
-      <SwipperService quantitySlides={quantitySlides} />
+      {!loadingSwiper && (
+        <div className=" mt-16 mb-[116px] md:mb-16 md:mt-[70px] lg:mb-12 lg:mt-1 w-full lg:h-[40rem] xxl:h-auto xxl:mt-12 xxl:pb-36 grid lg:gap-28 sm:gap-14  sm:grid-cols-3">
+          <SkeletonSwiper />
+          <SkeletonSwiper scale="scale-110" />
+          <SkeletonSwiper />
+        </div>
+      )}
+      {loadingSwiper && <SwipperService quantitySlides={quantitySlides} />}
     </div>
   );
 };

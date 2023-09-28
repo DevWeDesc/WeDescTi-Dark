@@ -30,7 +30,7 @@ export const Tecnologies = () => {
       <div className="xxl:grid-cols-3  lg:grid-cols-2 grid">
         <div className="flex flex-col xxl:col-span-2 h-full justify-between  py-3 space-y-3 ">
           <div className="space-y-4 pt-16 xxl:pt-32">
-            <h2 className="w-full flex text-3xl lg:text-4xl xxl:text-5xl font-mono">
+            <h2 className="w-full flex text-3xl md:text-4xl xxl:text-5xl font-mono">
               Nossas Tecnologias!
             </h2>
             <p className="text-lg lg:text-xl xxl:text-2xl font-mono">
@@ -55,7 +55,7 @@ export const Tecnologies = () => {
         </div>
       </div>
       <div className="mt-0 gap-8">
-        <div className="grid lg:pr-20 xxl:pr-0 lg:grid-cols-6 xxl:grid-cols-5 lg:grid-rows-2 grid-cols-2 gap-10 lg:gap-7 space-y-10">
+        <div className="grid lg:pr-20 xxl:pr-0 lg:grid-cols-5 xl:grid-cols-5 xxl:grid-cols-5 lg:grid-rows-2 grid-cols-2 gap-10 lg:gap-7 space-y-10">
           <DivTecnologies color="#000" bg="#FFF">
             <SiNextdotjs className={`${classTecnologi}`} />
             <p className="lg:text-2xl font-mono">NextJs</p>
@@ -104,7 +104,7 @@ export const Tecnologies = () => {
             <SiJavascript className={`${classTecnologi}  `} />
             <p className="lg:text-2xl font-mono"> JavaScript</p>
           </DivTecnologies>
-          <p className="pt-16 text-2xl lg:text-3xl xxl:text-4xl col-span-2 lg:col-span-6 xxl:col-span-5 font-mono">
+          <p className="pt-16 text-2xl md:text-3xl xxl:text-4xl col-span-2 lg:col-span-5 xl:col-span-5 xxl:col-span-5 font-mono">
             Bancos de Dados e ORMs!
           </p>
           <DivTecnologies color="#FFF" bg="rgb(8 47 73)">

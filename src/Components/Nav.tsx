@@ -6,7 +6,7 @@ import { INav } from "@/interfaces/interface";
 export const Nav = ({ reflink, name, onclick, selected }: INav) => {
   return (
     <ul
-      className="ml-12 flex w-full text-md gap-6 pt-2 lg:text-xs"
+      className="ml-12 md:mr-5 xl:mr-0 flex w-full text-md gap-6 pt-2 lg:text-xs"
       onClick={onclick}
     >
       <li

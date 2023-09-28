@@ -45,3 +45,7 @@ export interface IDivTecnologies {
   bg: string;
   color: string;
 }
+
+export interface ISkeletonSwiper {
+  scale?: string;
+}

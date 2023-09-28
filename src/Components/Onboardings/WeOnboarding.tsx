@@ -14,7 +14,7 @@ export const WeOnboarding = ({
       <div className="w-full h-full flex items-center">
         <div className="space-y-4">
           {logo != "" && <Image alt="" src={logo} />}
-          <h2 className="font-mono text-3xl lg:text-4xl xxl:text-5xl xxl:max-w-2xl max-w-lg">
+          <h2 className="font-mono text-3xl md:text-4xl xxl:text-5xl xxl:max-w-2xl max-w-lg">
             {title}
           </h2>
           <p className="lg:text-[20px] brightness-75 max-w-xl hover:brightness-100 transition-all">
